@@ -14,10 +14,10 @@
  ***********************************/
 
  // Theme color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_theme_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Theme Color', 'ecobit' ),
         'description' => esc_html__( 'Select the theme color.', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -28,10 +28,10 @@ Epsilon_Customizer::add_field(
 
 
 // Header booking button field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_header_btn',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Header button show/hide', 'ecobit' ),
         'section'     => 'ecobit_header_section',
         'default'     => true
@@ -39,7 +39,7 @@ Epsilon_Customizer::add_field(
 );
 
 // Booking button label
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'header_btn_label',
     array(
         'type'              => 'text',
@@ -51,7 +51,7 @@ Epsilon_Customizer::add_field(
 );
 
 // Booking button url
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'booking_btn_url',
     array(
         'type'              => 'text',
@@ -63,10 +63,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Booking button hover background color
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_booking_btn_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header Button Hover BG Color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_header_section',
@@ -76,10 +76,10 @@ Epsilon_Customizer::add_field(
 
  
 // Header background color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_header_bg_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Sticky Header BG Color', 'ecobit' ),
         'description' => esc_html__( 'Select the header background color.', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
@@ -89,10 +89,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_header_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_header_section',
@@ -101,10 +101,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header nav menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_header_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Header menu hover color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_header_section',
@@ -113,10 +113,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header dropdown menu color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_header_drop_menu_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_header_section',
@@ -125,10 +125,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Header dropdown menu hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_header_drop_menu_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Dropdown menu hover color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_header_section',
@@ -142,7 +142,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
  
 // Post excerpt length field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_excerpt_length',
     array(
         'type'        => 'text',
@@ -155,28 +155,28 @@ Epsilon_Customizer::add_field(
 );
 
 // Blog single page social share icon
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_blog_meta',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog page post meta show/hide', 'ecobit' ),
         'section'     => 'ecobit_blog_section',
         'default'     => true
     )
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_like_btn',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Single Page Like Button show/hide', 'ecobit' ),
         'section'     => 'ecobit_blog_section',
         'default'     => true
     )
 );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_blog_share',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Blog Single Page Share show/hide', 'ecobit' ),
         'section'     => 'ecobit_blog_section',
         'default'     => true
@@ -189,7 +189,7 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // 404 text #1 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_fof_titleone',
     array(
         'type'              => 'text',
@@ -200,7 +200,7 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_fof_titletwo',
     array(
         'type'              => 'text',
@@ -211,10 +211,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #1 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_fof_textone_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #1 Color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_fof_section',
@@ -222,10 +222,10 @@ Epsilon_Customizer::add_field(
     )
 );
 // 404 text #2 color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_fof_texttwo_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( '404 Text #2 Color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_fof_section',
@@ -238,10 +238,10 @@ Epsilon_Customizer::add_field(
  ***********************************/
 
 // Footer Widget section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'footer_widget_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Footer Widget Section', 'ecobit' ),
         'section'     => 'ecobit_footer_section',
 
@@ -249,10 +249,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget toggle field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_footer_widget_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Footer widget show/hide', 'ecobit' ),
         'description' => esc_html__( 'Toggle to display footer widgets.', 'ecobit' ),
         'section'     => 'ecobit_footer_section',
@@ -261,10 +261,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer Copyright section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_footer_copyright_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Footer Copyright Section', 'ecobit' ),
         'section'     => 'ecobit_footer_section',
         'default'     => true,
@@ -276,10 +276,10 @@ Epsilon_Customizer::add_field(
 // Copy right text
 $url = 'https://colorlib.com/';
 $copyText = sprintf( __( 'Theme by %s colorlib %s Copyright &copy; %s  |  All rights reserved.', 'ecobit' ), '<a target="_blank" href="' . esc_url( $url ) . '">', '</a>', date( 'Y' ) );
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_footer_copyright_text',
     array(
-        'type'        => 'epsilon-text-editor',
+        'type'        => 'colorlib-text-editor',
         'label'       => esc_html__( 'Footer copyright text', 'ecobit' ),
         'section'     => 'ecobit_footer_section',
         'default'     => wp_kses_post( $copyText ),
@@ -287,10 +287,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Social Profile section
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'social_pro_separator',
     array(
-        'type'        => 'epsilon-separator',
+        'type'        => 'colorlib-separator',
         'label'       => esc_html__( 'Social Profile Section', 'ecobit' ),
         'section'     => 'ecobit_footer_section',
         'default'     => true,
@@ -299,10 +299,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Social Profile Show/Hide
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_social_profile_toggle',
     array(
-        'type'        => 'epsilon-toggle',
+        'type'        => 'colorlib-toggle',
         'label'       => esc_html__( 'Social Profile Show/Hide', 'ecobit' ),
         'section'     => 'ecobit_footer_section',
         'default'     => true,
@@ -310,10 +310,10 @@ Epsilon_Customizer::add_field(
 );
 
 //Social Profile links
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
 	'ecobit_header_social',
 	array(
-		'type'         => 'epsilon-repeater',
+		'type'         => 'colorlib-repeater',
 		'section'      => 'ecobit_footer_section',
 		'label'        => esc_html__( 'Social Profile Links', 'ecobit' ),
         'button_label' => esc_html__( 'Add new social link', 'ecobit' ),
@@ -358,7 +358,7 @@ Epsilon_Customizer::add_field(
 			),
 			'social_icon'        => array(
 				'label'   => esc_html__( 'Icon', 'ecobit' ),
-				'type'    => 'epsilon-icon-picker',
+				'type'    => 'colorlib-icon-picker',
 				'default' => 'fa fa-twitter',
 			),
 			
@@ -367,10 +367,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget text color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_footer_widget_text_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Text Color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_footer_section',
@@ -379,10 +379,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget title color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_footer_widget_title_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Widget Title Color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_footer_section',
@@ -391,10 +391,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_footer_widget_anchor_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_footer_section',
@@ -403,10 +403,10 @@ Epsilon_Customizer::add_field(
 );
 
 // Footer widget anchor hover color field
-Epsilon_Customizer::add_field(
+Colorlib_Customizer::add_field(
     'ecobit_footer_widget_anchor_hover_color',
     array(
-        'type'        => 'epsilon-color-picker',
+        'type'        => 'colorlib-color-picker',
         'label'       => esc_html__( 'Footer Anchor Hover Color', 'ecobit' ),
         'sanitize_callback' => 'sanitize_text_field',
         'section'     => 'ecobit_footer_section',
