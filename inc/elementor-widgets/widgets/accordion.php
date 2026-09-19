@@ -171,7 +171,7 @@ class Ecobit_FAQ extends Widget_Base {
         <div class="card">
             <div class="card-header" id="heading<?php echo $counter?>">
                 <h5 class="mb-0">
-                    <button class="btn btn-link<?php echo $counter != 1 ? ' collapsed' : ''; ?>" data-toggle="collapse" data-target="#collapse<?php echo $counter?>"
+                    <button class="btn btn-link<?php echo $counter != 1 ? ' collapsed' : ''; ?>" data-bs-toggle="collapse" data-bs-target="#collapse<?php echo $counter?>"
                         aria-expanded="<?php echo $behaviour?>" aria-controls="collapse<?php echo $counter?>">
                         <?php
                             echo wp_kses_post( $accordion_header );
@@ -181,7 +181,7 @@ class Ecobit_FAQ extends Widget_Base {
             </div>
 
             <div id="collapse<?php echo $counter?>" class="collapse <?php echo $behaviour == 'true' ? 'show' : ''; ?>" aria-labelledby="heading<?php echo $counter?>"
-                data-parent="#accordion">
+                data-bs-parent="#accordion">
                 <div class="card-body">
                     <?php
                         echo wp_kses_post( $accordion_body );
