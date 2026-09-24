@@ -242,7 +242,7 @@
 						'handler'		=> 'ecobit-custom',
 						'file' 			=> $jsPath.'custom.js',
 						'dependency' 	=> array( 'ecobit-ui-js' ),
-						'version' 		=> $this->ecobit_version . '-s2',
+						'version' 		=> $this->ecobit_version . '-s3',
 						'in_footer' 	=> true
 					),
 

@@ -90,8 +90,12 @@
     }
 
     // Accordion: each .accordion button opens the panel that follows it.
+    // The accordion widget's editor script binds the same handler; the flag
+    // keeps it to one binding, or a click would toggle twice and do nothing.
     var acc = document.getElementsByClassName('accordion');
     for (var i = 0; i < acc.length; i++) {
+      if (acc[i].ecobitAccordion) continue;
+      acc[i].ecobitAccordion = true;
       acc[i].addEventListener('click', function () {
         this.classList.toggle('active');
         var panel = this.nextElementSibling;

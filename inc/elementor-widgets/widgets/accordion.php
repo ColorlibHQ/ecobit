@@ -254,8 +254,11 @@ class Ecobit_FAQ extends Widget_Base {
                 var UI = window.ColorlibUI;
                 if (!UI) return;
                 // Accordion: each .accordion button opens the panel that follows it.
+                // custom.js binds the same handler; bind each button only once.
                 var acc = document.getElementsByClassName('accordion');
                 for (var i = 0; i < acc.length; i++) {
+                    if (acc[i].ecobitAccordion) continue;
+                    acc[i].ecobitAccordion = true;
                     acc[i].addEventListener('click', function () {
                         this.classList.toggle('active');
                         var panel = this.nextElementSibling;
