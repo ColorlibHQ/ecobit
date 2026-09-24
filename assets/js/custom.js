@@ -46,7 +46,7 @@ if(client_logo.length){
   }
 
   $(document).ready(function() {
-    $('select').niceSelect();
+    ColorlibUI.enhanceSelects('select');
   });
   // menu fixed js code
   $(window).scroll(function () {
@@ -96,24 +96,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-/*-------------------------------------
-  Instagram Photos
-  -------------------------------------*/
-  function cp_instagram_photos() {
-    $('.cp-instagram-photos').each(function(){
-        $.instagramFeed({
-            'username': $(this).data('username'),
-            'container': $(this),
-            'display_profile': false,
-            'display_biography': false,
-            'items': $(this).data('items'),
-            'margin': 0
-        });
-        console.log( $(this) );
-    });
 
-  }
-  cp_instagram_photos();
 
 
 }(jQuery));
