@@ -297,10 +297,10 @@ if ( !class_exists( 'Ecobit_El_Widgets' ) ) {
 
 
             // ecobit map custom js
-            wp_register_script( 'ecobit-map-custom', ECOBIT_DIR_ELEMENTOR . 'assets/js/map-custom.js', array('jquery'), '1.0', true );
+            wp_register_script( 'ecobit-map-custom', ECOBIT_DIR_ELEMENTOR . 'assets/js/map-custom.js', array(), '1.0-s2', true );
 
             // ecobit companion main js
-            wp_enqueue_script( 'ecobit', ECOBIT_DIR_ELEMENTOR . 'assets/js/ecobit-companion-main.js', array( 'jquery', 'jquery-ui-datepicker' ), '1.0', true );
+            wp_enqueue_script( 'ecobit', ECOBIT_DIR_ELEMENTOR . 'assets/js/ecobit-companion-main.js', array( 'ecobit-ui-js' ), '1.0-s2', true );
 
 
             wp_localize_script( 'ecobit', 'ajax_object',

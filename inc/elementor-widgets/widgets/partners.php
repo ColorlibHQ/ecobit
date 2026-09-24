@@ -121,14 +121,14 @@ class Ecobit_Partners extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            $(document).ready(function() {
-                var client_logo = $('.client_logo_slider')
-                if(client_logo.length){
-                    client_logo.owlCarousel({
-                        items: 6,
-                        loop: true,
-                        responsive: {
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                UI.owl('.client_logo_slider', {
+                    items: 6,
+                    loop: true,
+                    responsive: {
                         0: {
                             items: 3,
                             margin: 15,
@@ -145,11 +145,15 @@ class Ecobit_Partners extends Widget_Base {
                             items: 6,
                             margin: 15,
                         }
-                        }             
-                    });
-                }
-            });
-        })(jQuery);
+                    }
+                });
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

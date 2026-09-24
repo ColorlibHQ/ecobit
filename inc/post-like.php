@@ -10,7 +10,7 @@
 add_action( 'wp_enqueue_scripts', 'ecobit_sl_enqueue_scripts' );
 function ecobit_sl_enqueue_scripts() {
 
-	wp_enqueue_script( 'ecobit-post-likes', ECOBIT_DIR_JS_URI . 'post-likes.js', array( 'jquery' ), '0.5', false );
+	wp_enqueue_script( 'ecobit-post-likes', ECOBIT_DIR_JS_URI . 'post-likes.js', array( 'ecobit-ui-js' ), '0.5-s2', true );
 
 	wp_localize_script( 'ecobit-post-likes', 'simpleLikes', array(
 		'ajaxurl' => admin_url( 'admin-ajax.php' ),

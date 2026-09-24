@@ -249,25 +249,31 @@ class Ecobit_FAQ extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            $(document).ready(function() {
-
-            var acc = document.getElementsByClassName("accordion");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.maxHeight){
-                    panel.style.maxHeight = null;
-                    } else {
-                    panel.style.maxHeight = panel.scrollHeight + "px";
-                    } 
-                });
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                // Accordion: each .accordion button opens the panel that follows it.
+                var acc = document.getElementsByClassName('accordion');
+                for (var i = 0; i < acc.length; i++) {
+                    acc[i].addEventListener('click', function () {
+                        this.classList.toggle('active');
+                        var panel = this.nextElementSibling;
+                        if (!panel) return;
+                        if (panel.style.maxHeight) {
+                            panel.style.maxHeight = null;
+                        } else {
+                            panel.style.maxHeight = panel.scrollHeight + 'px';
+                        }
+                    });
+                }
             }
-            });
-        })(jQuery);
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }

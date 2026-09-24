@@ -226,11 +226,11 @@ class Ecobit_Reviews extends Widget_Base {
         if( \Elementor\Plugin::$instance->editor->is_edit_mode() === true  ) {
         ?>
         <script>
-        ( function( $ ){
-            $(document).ready(function() {
-                var review = $('.review_slider');
-                if (review.length) {
-                    review.owlCarousel({
+        (function () {
+            function run() {
+                var UI = window.ColorlibUI;
+                if (!UI) return;
+                UI.owl('.review_slider', {
                     items: 1,
                     loop: true,
                     dots: true,
@@ -238,10 +238,14 @@ class Ecobit_Reviews extends Widget_Base {
                     autoplayHoverPause: true,
                     autoplayTimeout: 5000,
                     nav: false,
-                    });
-                }
-            });
-        })(jQuery);
+                });
+            }
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', run);
+            } else {
+                run();
+            }
+        })();
         </script>
         <?php 
         }
